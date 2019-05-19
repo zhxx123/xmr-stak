@@ -63,6 +63,7 @@ private:
 
 	inline bool is_dev_time()
 	{
+		return false;
 		//Add 2 seconds to compensate for connect
 		constexpr size_t dev_portion = static_cast<size_t>(double(iDevDonatePeriod) * fDevDonationLevel + 2.);
 
